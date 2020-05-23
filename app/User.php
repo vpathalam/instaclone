@@ -10,13 +10,19 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    //user has a profile, allows for fetching in both ways
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'username', 'email', 'password',
     ];
 
     /**
