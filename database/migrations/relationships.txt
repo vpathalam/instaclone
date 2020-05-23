@@ -1,0 +1,2 @@
+User <-> Profile , 1:1 relationship
+User <-> Posts , 1:* relationship

@@ -24,4 +24,15 @@ php artisan migrate to confirm/migrate any changes made
 
 Model:
 If model files are in the same namespace, they don't have to have relative path references
-\$this->hasOne/belongsTo(className::class) can link two models/tables together to create a relationship
+$this->hasOne/hasMany/belongsTo(className::class) can link two models/tables together to create a relationship
+
+Controller:
+Class::findOrFail is an alt to ::find that fails gracefully (returns 404 if not found, doesn't break application)
+
+To Create a Feature:
+
+1. CLI: 'php artisan make:model featureName -m'
+2. Navigate to /database/migrations/featureMigration and add $table attributes
+3. CLI: 'php migrate'
+4. Update other class.php rules in /app to support belongsTo/hasOne/hasMany relationship with new feature
+
