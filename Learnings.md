@@ -28,6 +28,9 @@ $this->hasOne/hasMany/belongsTo(className::class) can link two models/tables tog
 
 Controller:
 Class::findOrFail is an alt to ::find that fails gracefully (returns 404 if not found, doesn't break application)
+    To Create a Controller
+        1. 'php artisan make:controller controllerName"
+        2. Make create function in new controller, update for interfacing with view
 
 To Create a Feature:
 

@@ -3,11 +3,14 @@
 @section('content')
 <div class="container pl-5">
 <div class="row">
-    <div class="col-3 p-5"><img src="https://scontent-bos3-1.cdninstagram.com/v/t51.2885-19/s320x320/75601593_2416145665368344_3873246514495094784_n.jpg?_nc_ht=scontent-bos3-1.cdninstagram.com&_nc_ohc=EZxztywOGRUAX_lp0Y6&oh=356f69b04b3494e6cfd99b7fe1cb645c&oe=5EE6861D" style="height: 200px;" class="rounded-circle" alt=""></div>
-    <div class="col-9 pt-5">
-    <div>
-        <h1>{{$user->username}}</h1>
+    <div class="col-3 p-5">
+        <img src="https://scontent-bos3-1.cdninstagram.com/v/t51.2885-19/s320x320/75601593_2416145665368344_3873246514495094784_n.jpg?_nc_ht=scontent-bos3-1.cdninstagram.com&_nc_ohc=EZxztywOGRUAX_lp0Y6&oh=356f69b04b3494e6cfd99b7fe1cb645c&oe=5EE6861D" style="height: 200px;" class="rounded-circle" alt="">
     </div>
+    <div class="col-9 pt-5">
+        <div class="d-flex justify-content-between align-items-baseline">
+            <h1>{{$user->username}}</h1>
+            <a href="#">Add New Post</a>
+        </div>
         <div class="d-flex">
             <div class="pr-5"><strong>200</strong> posts</div>
             <div class="pr-5"><strong>1k</strong> followers</div>
